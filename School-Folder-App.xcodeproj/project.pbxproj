@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841ED7C1270FD7620066E910 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 841ED7C0270FD7620066E910 /* main.c */; };
+		84213A1026DB4AE1009BEA39 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84213A0F26DB4AE1009BEA39 /* main.cpp */; };
+		84CB79CA26D9C50D0058D43B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CB79C926D9C50D0058D43B /* OpenGL.framework */; };
+		84CB79CC26D9C5890058D43B /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CB79CB26D9C5890058D43B /* libglfw.3.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		841ED7BB270FD7620066E910 /* CopyFiles */ = {
+		84CB79BC26D9A74A0058D43B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,79 +25,95 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		841ED7BD270FD7620066E910 /* School-Folder-App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "School-Folder-App"; sourceTree = BUILT_PRODUCTS_DIR; };
-		841ED7C0270FD7620066E910 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		84213A0F26DB4AE1009BEA39 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		84213A1826DC3012009BEA39 /* libgladeui-2.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libgladeui-2.13.dylib"; path = "../../../../../usr/local/Cellar/glade/3.38.2/lib/libgladeui-2.13.dylib"; sourceTree = "<group>"; };
+		84CB79BE26D9A74A0058D43B /* School-Folder-App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "School-Folder-App"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CB79C926D9C50D0058D43B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		84CB79CB26D9C5890058D43B /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/Cellar/glfw/3.3.4/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		841ED7BA270FD7620066E910 /* Frameworks */ = {
+		84CB79BB26D9A74A0058D43B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CB79CC26D9C5890058D43B /* libglfw.3.3.dylib in Frameworks */,
+				84CB79CA26D9C50D0058D43B /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		841ED7B4270FD7620066E910 = {
+		84213A0E26DB4AC3009BEA39 /* School-Folder-App */ = {
 			isa = PBXGroup;
 			children = (
-				841ED7BF270FD7620066E910 /* School-Folder-App */,
-				841ED7BE270FD7620066E910 /* Products */,
+				84213A0F26DB4AE1009BEA39 /* main.cpp */,
+			);
+			path = "School-Folder-App";
+			sourceTree = "<group>";
+		};
+		84CB79B526D9A74A0058D43B = {
+			isa = PBXGroup;
+			children = (
+				84213A0E26DB4AC3009BEA39 /* School-Folder-App */,
+				84CB79BF26D9A74A0058D43B /* Products */,
+				84CB79C826D9C50D0058D43B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		841ED7BE270FD7620066E910 /* Products */ = {
+		84CB79BF26D9A74A0058D43B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				841ED7BD270FD7620066E910 /* School-Folder-App */,
+				84CB79BE26D9A74A0058D43B /* School-Folder-App */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		841ED7BF270FD7620066E910 /* School-Folder-App */ = {
+		84CB79C826D9C50D0058D43B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				841ED7C0270FD7620066E910 /* main.c */,
+				84213A1826DC3012009BEA39 /* libgladeui-2.13.dylib */,
+				84CB79CB26D9C5890058D43B /* libglfw.3.3.dylib */,
+				84CB79C926D9C50D0058D43B /* OpenGL.framework */,
 			);
-			path = "School-Folder-App";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		841ED7BC270FD7620066E910 /* School-Folder-App */ = {
+		84CB79BD26D9A74A0058D43B /* School-Folder-App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 841ED7C4270FD7620066E910 /* Build configuration list for PBXNativeTarget "School-Folder-App" */;
+			buildConfigurationList = 84CB79C526D9A74A0058D43B /* Build configuration list for PBXNativeTarget "School-Folder-App" */;
 			buildPhases = (
-				841ED7B9270FD7620066E910 /* Sources */,
-				841ED7BA270FD7620066E910 /* Frameworks */,
-				841ED7BB270FD7620066E910 /* CopyFiles */,
+				84CB79BA26D9A74A0058D43B /* Sources */,
+				84CB79BB26D9A74A0058D43B /* Frameworks */,
+				84CB79BC26D9A74A0058D43B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "School-Folder-App";
-			productName = "School-Folder-App";
-			productReference = 841ED7BD270FD7620066E910 /* School-Folder-App */;
+			productName = "RTS-Engine";
+			productReference = 84CB79BE26D9A74A0058D43B /* School-Folder-App */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		841ED7B5270FD7620066E910 /* Project object */ = {
+		84CB79B626D9A74A0058D43B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					841ED7BC270FD7620066E910 = {
+					84CB79BD26D9A74A0058D43B = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = 841ED7B8270FD7620066E910 /* Build configuration list for PBXProject "School-Folder-App" */;
+			buildConfigurationList = 84CB79B926D9A74A0058D43B /* Build configuration list for PBXProject "School-Folder-App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -103,29 +121,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 841ED7B4270FD7620066E910;
-			productRefGroup = 841ED7BE270FD7620066E910 /* Products */;
+			mainGroup = 84CB79B526D9A74A0058D43B;
+			productRefGroup = 84CB79BF26D9A74A0058D43B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				841ED7BC270FD7620066E910 /* School-Folder-App */,
+				84CB79BD26D9A74A0058D43B /* School-Folder-App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		841ED7B9270FD7620066E910 /* Sources */ = {
+		84CB79BA26D9A74A0058D43B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841ED7C1270FD7620066E910 /* main.c in Sources */,
+				84213A1026DB4AE1009BEA39 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		841ED7C2270FD7620066E910 /* Debug */ = {
+		84CB79C326D9A74A0058D43B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +202,7 @@
 			};
 			name = Debug;
 		};
-		841ED7C3270FD7620066E910 /* Release */ = {
+		84CB79C426D9A74A0058D43B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,22 +254,32 @@
 			};
 			name = Release;
 		};
-		841ED7C5270FD7620066E910 /* Debug */ = {
+		84CB79C626D9A74A0058D43B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GL2LHGMWHV;
-				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/glfw/3.3.4/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.4/lib,
+					/usr/local/Cellar/glade/3.38.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		841ED7C6270FD7620066E910 /* Release */ = {
+		84CB79C726D9A74A0058D43B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GL2LHGMWHV;
-				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/glfw/3.3.4/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.4/lib,
+					/usr/local/Cellar/glade/3.38.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -259,25 +287,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		841ED7B8270FD7620066E910 /* Build configuration list for PBXProject "School-Folder-App" */ = {
+		84CB79B926D9A74A0058D43B /* Build configuration list for PBXProject "School-Folder-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				841ED7C2270FD7620066E910 /* Debug */,
-				841ED7C3270FD7620066E910 /* Release */,
+				84CB79C326D9A74A0058D43B /* Debug */,
+				84CB79C426D9A74A0058D43B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		841ED7C4270FD7620066E910 /* Build configuration list for PBXNativeTarget "School-Folder-App" */ = {
+		84CB79C526D9A74A0058D43B /* Build configuration list for PBXNativeTarget "School-Folder-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				841ED7C5270FD7620066E910 /* Debug */,
-				841ED7C6270FD7620066E910 /* Release */,
+				84CB79C626D9A74A0058D43B /* Debug */,
+				84CB79C726D9A74A0058D43B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 841ED7B5270FD7620066E910 /* Project object */;
+	rootObject = 84CB79B626D9A74A0058D43B /* Project object */;
 }
